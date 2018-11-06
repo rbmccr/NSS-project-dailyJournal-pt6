@@ -10,7 +10,6 @@ function activateButton() {
         let idx3 = moodInput.value;
 
         inputs = [idx0, idx1, idx2, idx3];
-        console.log(inputs)
         //if any of the inputs have profanity, don't meet the regex, are blank, or are undefined, don't move on the the POST
         for (i = 0; i < inputs.length; i++) {
             if (profanityBlocker1 === true || profanityBlocker2 === true || !regex.test(inputs[i]) || inputs[i] === "" || inputs[i] === undefined) {
@@ -38,6 +37,7 @@ function activateButton() {
             let holdMyObject = []; //holds single object
             holdMyObject.push(data);
             renderJournalEntries(holdMyObject);
+            entryLength++; // increment counter to show additional object in database. Affects radio button filtering
         });
         dateInput.value = "";
         conceptInput.value = "";

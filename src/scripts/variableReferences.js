@@ -37,4 +37,7 @@ let entryInput;
 let moodInput;
 
 /* cache of journal entries */
+// (referenced in entriesDOM.js, entriesCache.js, journal.js, and radio-buttons.js)
 let cache = [];
+// used to identify number of objects in database
+let entryLength; // value established in entriesDOM.js and updated on POST button click in journal.js

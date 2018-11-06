@@ -48,6 +48,13 @@
       "entry": "Today Im starting the lab day by working on Daily Journal Part 6",
       "mood": "Good",
       "id": 7
+    },
+    {
+      "date": "2018-11-06",
+      "concept": "Finishes DJ pt 6",
+      "entry": "I added a filtering method and a useful caching method that updated itself when filtering after a POST to database",
+      "mood": "Good",
+      "id": 8
     }
   ]
 }
