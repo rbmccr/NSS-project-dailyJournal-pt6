@@ -41,6 +41,13 @@
       "entry": "I finished Daily Journal Part 5.",
       "mood": "Fantastic",
       "id": 6
+    },
+    {
+      "date": "2018-11-06",
+      "concept": "Lab day",
+      "entry": "Today Im starting the lab day by working on Daily Journal Part 6",
+      "mood": "Good",
+      "id": 7
     }
   ]
 }

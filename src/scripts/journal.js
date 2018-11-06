@@ -1,11 +1,5 @@
-// Main application logic that uses the functions and objects
-// defined in the other JavaScript files.
+// immediately GET and display journal entries in the database
 API.getJournalEntries().then(entries => renderJournalEntries(entries));
-
-let inputs = [];
-let journalEntryObject = {};
-//regex says expression can include letters, nums, "{}", "()", " ", ";", "-", ",", and ":"
-let regex = new RegExp("^[a-zA-Z0-9(.).{.}. .,.:.;.-]*$");
 
 //this function posts form information to the database, assuming all requirements are met
 function activateButton() {

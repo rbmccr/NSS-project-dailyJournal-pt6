@@ -1,7 +1,14 @@
+/* containers */
 const container = document.querySelector(".entryLog");
 const header = document.getElementById("header");
 const formContainer = document.getElementById("form--container");
 const buttonContainer = document.getElementById("button--container");
+
+/* journal.js form POST click listener */
+let inputs = [];
+let journalEntryObject = {};
+//regex says expression can include letters, nums, "{}", "()", " ", ";", "-", ",", and ":"
+let regex = new RegExp("^[a-zA-Z0-9(.).{.}. .,.:.;.-]*$");
 
 /* radio button filtering */
 const radioContainer = document.getElementById("radio--container");
@@ -28,3 +35,6 @@ let dateInput;
 let conceptInput;
 let entryInput;
 let moodInput;
+
+/* cache of journal entries */
+let cache = [];
