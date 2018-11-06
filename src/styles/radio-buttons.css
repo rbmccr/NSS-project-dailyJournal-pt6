@@ -1,0 +1,7 @@
+.filter {
+  padding: 10px;
+}
+
+button[type="radio"] {
+  margin-bottom: 5px;
+}
